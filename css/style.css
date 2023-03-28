@@ -1,0 +1,52 @@
+body {
+  min-height: 75rem;
+}
+
+
+
+.form-control, .me2{
+
+  margin-right: 0px;
+    border-top-width: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    opacity: 0;
+    width: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-bottom-width: 0px;
+    transition: width 10s, opacity 1.2s;
+}
+
+
+.form-control:hover, .me2:hover{
+
+  margin-right: 0px;
+    border-top-width: 0px;
+
+    opacity: 1;
+    width: 100%;
+    border-bottom-width: 0px;
+    
+}
+
+.d-flex2{
+  width: 100%;
+justify-content:flex-end;
+column-gap: 3px;
+}
+
+.inbutton
+{
+
+  margin-bottom:0px;
+}
+
+.btn, .btn-outline-success{
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
+

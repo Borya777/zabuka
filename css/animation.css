@@ -1,0 +1,23 @@
+
+.fadeOutRight {
+            /*animation-name: fadeOutRight;*/
+            animation-duration: 2s;
+            animation-fill-mode: both;
+            }
+
+         
+ @keyframes fadeOutRight {
+    0% {
+       opacity: 1;
+       transform: translateX(0);
+       width: 100px;
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(300px);
+       width:0%;
+    }
+ }
+ button:active{
+ 	
+ }
