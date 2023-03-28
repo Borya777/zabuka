@@ -17,11 +17,11 @@ body {
     padding-top: 0px;
     padding-bottom: 0px;
     border-bottom-width: 0px;
-    transition: width 10s, opacity 1.2s;
+    transition: width 2s, opacity 1.2s;
 }
 
 
-.form-control:hover, .me2:hover{
+/*.form-control:hover, .me2:hover{
 
   margin-right: 0px;
     border-top-width: 0px;
@@ -30,7 +30,7 @@ body {
     width: 100%;
     border-bottom-width: 0px;
     
-}
+}*/
 
 .d-flex2{
   width: 100%;
@@ -45,8 +45,45 @@ column-gap: 3px;
 }
 
 .btn, .btn-outline-success{
+  overflow:hidden;
   display: flex;
   justify-content: center;
   column-gap: 5px;
 }
 
+
+.clickable2-element{
+  overflow:hidden;
+  width:0;
+  color:white;
+  background-color: rgba(0,0,0,0);
+   font-size: 36px;
+  font-weight: 600;
+   line-height: 1;
+   transform: rotate(180deg);
+    transition: color 500ms ease 0s; 
+    cursor: pointer;
+     align-self: center;
+ }
+
+ .clickable2-element:hover{
+  color: #ff5353;
+ }
+
+ .hm {
+  display: flex;
+  width:35px;
+ }
+ .nav-item{
+  overflow:hidden;
+
+ }
+ .navbar-brand{
+  overflow:hidden;
+}
+
+@media screen and (max-width: 767px) {
+    .container-fluid {
+        display: none !important;
+    }
+}

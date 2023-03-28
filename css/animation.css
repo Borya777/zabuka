@@ -1,23 +1,42 @@
 
-.fadeOutRight {
+.widthShrin {
             /*animation-name: fadeOutRight;*/
-            animation-duration: 2s;
+            width: 300px;
+            animation-duration: 1s;
             animation-fill-mode: both;
             }
 
+.widthShrinOut {
+            /*animation-name: fadeOutRight;*/
+            width: 300px;
+            animation-duration: 1.5s;
+            animation-fill-mode: both;
+            }
+
+
          
- @keyframes fadeOutRight {
+ @keyframes widthShrinIn {
     0% {
        opacity: 1;
-       transform: translateX(0);
        width: 100px;
     }
     100% {
-       opacity: 1;
-       transform: translateX(300px);
+       opacity: 0;
        width:0%;
     }
  }
- button:active{
- 	
+
+ @keyframes widthShrinOut {
+   0% {
+       opacity: 0;
+       width:0%;
+    }
+
+    100% {
+       opacity: 1;
+       //transform: translateX(0);
+       width: 300px;
+
+    }
+    
  }
