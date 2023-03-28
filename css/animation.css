@@ -18,7 +18,7 @@
  @keyframes widthShrinIn {
     0% {
        opacity: 1;
-       width: 100px;
+       width: 300px;
     }
     100% {
        opacity: 0;
