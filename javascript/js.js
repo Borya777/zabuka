@@ -98,12 +98,8 @@ const screenHeight = window.screen.height
 //document.addEventListener('focus', (event) => {alert(document.activeElement.tagName)});
 
 function change_color(fcolor, scolor){
-	alert(getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color'))
-	alert(getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color2'))
 
 	document.documentElement.style.cssText = "--main-bg-color: " + fcolor.value + ";--main-bg-color2: " + scolor.value;
-	alert(getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color'))
-	alert(getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color2'))
 	
 	document.querySelector("input[type=fcolor]").value = getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color');
 	document.querySelector("input[type=scolor]").value = getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color2');
