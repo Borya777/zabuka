@@ -1,9 +1,22 @@
+
+
+
+:root{
+  --main-bg-color2: #ffffff;
+  --mine: #ffffff;
+  --main-bg-color: #000000;
+  
+}
+
+
+
+
 body {
+
+
   min-height: 75rem;
-  background: #2D51C1;
-background: -webkit-radial-gradient(top right, #2D51C1, #23EC55);
-background: -moz-radial-gradient(top right, #2D51C1, #23EC55);
-background: radial-gradient(to bottom left, #2D51C1, #23EC55);
+  background: linear-gradient(45deg, var(--main-bg-color), var(--main-bg-color2));
+
 }
 
 

@@ -1,0 +1,15 @@
+.input_panel{
+	column-gap:5px;
+	width: fit-content;
+    margin: auto;
+    display: flex;
+}
+
+.inputs{
+	row-gap:5px;
+	display:grid;
+}
+
+.sto{
+	height: fit-content;
+}
