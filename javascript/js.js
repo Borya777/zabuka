@@ -47,13 +47,13 @@ function widthShrinOut(quSelector){
 }
 
 function checkMenu(){
-	if (menuBar == false) {menuBar = true; document.querySelector('.form-control.me-2').focus()}
-	else {alert(document.querySelector('.form-control.me-2').value)}
+	if (menuBar == false) {menuBar = true; document.querySelector('.form-control2.me-22').focus()}
+	else {alert(document.querySelector('.form-control2.me-22').value)}
 	
 }
 
 
-var input = document.querySelector('.form-control.me-2')
+var input = document.querySelector('.form-control2.me-22')
 //alert(input)
 input.addEventListener('focus', (event) => {
 	if (menuBar != false){
@@ -88,5 +88,14 @@ function returnAll(){
 	})
 	
 }
+
+const screenWidth = window.screen.width
+const screenHeight = window.screen.height
+
+alert(screenWidth)
+alert(screenHeight)
+//alert(document.querySelector('.mobileMenu').style.maxHeight)
+document.querySelector('.mobileMenu').style.maxHeight = screenHeight
+//alert(document.querySelector('.mobileMenu').style.maxHeight)
 
 //document.addEventListener('focus', (event) => {alert(document.activeElement.tagName)});

@@ -1,14 +1,15 @@
 
 .widthShrin {
             /*animation-name: fadeOutRight;*/
-            width: 300px;
+            overflow: inherit;
+            width: 250px;
             animation-duration: 1s;
             animation-fill-mode: both;
             }
 
 .widthShrinOut {
             /*animation-name: fadeOutRight;*/
-            width: 300px;
+            width: 250px;
             animation-duration: 1.5s;
             animation-fill-mode: both;
             }
@@ -18,7 +19,7 @@
  @keyframes widthShrinIn {
     0% {
        opacity: 1;
-       width: 300px;
+       width: 250px;
     }
     100% {
        opacity: 0;
@@ -35,7 +36,7 @@
     100% {
        opacity: 1;
        //transform: translateX(0);
-       width: 300px;
+       width: 250px;
 
     }
     

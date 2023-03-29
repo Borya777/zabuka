@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="css/animation.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+
+
+
+<!-- Меню для Компов -->
+  <div class="container-fluid computer767">
 
     <div class="hm">
     <div class="clickable2-element widthShrinOut" style="width:0;" onclick='returnAll()'>➥</div>
@@ -18,7 +22,7 @@
 
 
 
-    <a class="navbar-brand widthShrin" href="#">МАГАЗИН</a>
+    <a class="navbar-brand widthShrin" style="overflow: inherit;" href="#">МАГАЗИН</a>
     
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0 widthShrin">
@@ -32,7 +36,7 @@
       </ul>
       <form class="d-flex d-flex2 " role="search">
         <div class="search_panel d-flex d-flex2">
-        <input class="form-control me-2" type="search" placeholder="Искать" aria-label="Search" onclick="widthShrinIn('.widthShrin'); widthShrinOut('.widthShrinOut');  document.querySelector('form>div>input').style.opacity = '1'; document.querySelector('form>div>input').style.width = '100%'; menuBar='true'">
+        <input class="form-control form-control2 me-22 me-2" type="search" placeholder="Искать" aria-label="Search" onclick="widthShrinIn('.widthShrin'); widthShrinOut('.widthShrinOut');  document.querySelector('form>div>input').style.opacity = '1'; document.querySelector('form>div>input').style.width = '100%'; menuBar = true">
         <div class="btn btn-outline-success" 
         onmousemove = 'alerts(1)' onmouseout = "alerts(0)" onclick="widthShrinIn('.widthShrin'); widthShrinOut('.widthShrinOut'); checkMenu()">ПОИСК</div></div>
 
@@ -40,7 +44,124 @@
       </form>
     </div>
   </div>
+
+<!-- Меню для мобилок -->
+
+<div class="container-fluid mobail767">
+      <a class="navbar-brand" href="#">Never expand</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse"  id="navbarsExample01" style="
+    overflow-y: scroll;
+    max-height: 80vh;
+">
+        <ul class="navbar-nav me-auto mb-2">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">КАТЕГОРИИ</a>
+            <ul class="dropdown-menu mobailul"">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">КАТЕГОРИИ</a>
+            <ul class="dropdown-menu mobailul"">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">КАТЕГОРИИ</a>
+          </li>
+
+
+        </ul>
+        <form role="search" class='search-mobile'>
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+</div>
+
+
+
+
+
+
 </nav>
+
+
+
+<div class="pizda">
+  <div class="height" onclick='alert(window.screen.height)'>Jopa</div>
+  <div class="width" onclick='alert(window.screen.width)'>Jopa</div>
+
+</div>
+
+
     <script src='javascript/js.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">

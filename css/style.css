@@ -4,7 +4,7 @@ body {
 
 
 
-.form-control, .me2{
+.form-control2, .me22{
 
   margin-right: 0px;
     border-top-width: 0px;
@@ -82,8 +82,55 @@ column-gap: 3px;
   overflow:hidden;
 }
 
+.navbar, .navbar-expand-md, .navbar-dark, .bg-dark, .mb-4{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    width: 100%;
+}
+
+.mobail767 {
+  display: none !important;
+  max-height: ;
+}
+
+.navbar-brand .widthShrin{
+  overflow: inherit;
+}
+
+
 @media screen and (max-width: 767px) {
-    .container-fluid {
+    .computer767  {
         display: none !important;
+
     }
+}
+
+@media screen and (max-width: 767px) {
+
+    .mobail767{
+      display: flex !important;
+    }
+}
+
+.search-mobile{
+    display: flex;
+    column-gap: 10px;
+}
+
+.mobailul{
+  margin:auto;
+  width: 90%;
+  max-height: 130px;
+  overflow: hidden;
+  overflow-y:scroll
+}
+
+.pizda{
+  margin-top: 220px;
+}
+
+.mobileMenu{
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y:scroll
 }
