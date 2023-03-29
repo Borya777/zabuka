@@ -340,11 +340,26 @@
 
       </div>
   
-
+<div class = 'pidorasiki' style="display: flex; justify-content: center;">PIDORASIKI</div>
 <div class="input_panel">
   <div class="inputs">
-    <input type="fcolor" name="email" placeholder="first_color" />
-    <input type="scolor" name="pass" placeholder="Second_color"/>
+    <div class="res">  
+      <div>
+      <input type="checkbox" name="ch1" checked>
+      <label for="scales" style='color:red;'>РАНДОМ?</label>
+    </div>
+        <input type="fcolor" name="email" placeholder="first_color" />
+
+  </div>
+    <div class="res">
+      <div>
+      <input type="checkbox" name="ch2">
+      <label for="horns" style='color:red;'>РАНДОМ?</label>
+      </div>
+      <input type="scolor" name="pass" placeholder="Second_color"/>
+  </div>
+
+    
   </div>
   <button class='sto' onclick="change_color(document.querySelector('input[type=fcolor]'), document.querySelector('input[type=scolor]'))">Pres to chose</button>
 

@@ -13,3 +13,9 @@
 .sto{
 	height: fit-content;
 }
+
+.res{
+	display:flex;
+	column-gap: 5px;
+
+}
