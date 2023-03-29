@@ -1,5 +1,9 @@
 body {
   min-height: 75rem;
+  background: #2D51C1;
+background: -webkit-radial-gradient(top right, #2D51C1, #23EC55);
+background: -moz-radial-gradient(top right, #2D51C1, #23EC55);
+background: radial-gradient(to bottom left, #2D51C1, #23EC55);
 }
 
 
@@ -134,3 +138,4 @@ column-gap: 3px;
   overflow: hidden;
   overflow-y:scroll
 }
+

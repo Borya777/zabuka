@@ -7,9 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/cardwbck.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   </head>
   <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4" style="z-index: 15;">
 
 
 
@@ -137,17 +142,19 @@
             <a class="nav-link disabled">КАТЕГОРИИ</a>
           </li>
 
+          <li class="nav-item">
+                      <button class="btn btn-outline-success" type="submit"><p style='margin-bottom: 0;'>КОРЗИНА</p><p style='margin-bottom: 0;'>0</p></button>
+          </li>
+
+
 
         </ul>
         <form role="search" class='search-mobile'>
           <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-success" type="submit">ПОИСК</button>
         </form>
       </div>
 </div>
-
-
-
 
 
 
@@ -155,11 +162,101 @@
 
 
 
-<div class="pizda">
-  <div class="height" onclick='alert(window.screen.height)'>Jopa</div>
-  <div class="width" onclick='alert(window.screen.width)'>Jopa</div>
 
-</div>
+<!-- Меню ЗАкончилось, начинается настоящий движ -->
+<main>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="img/1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#000000cf" fill-opacity="0.9"/></svg>
+        <div class="container">
+              <h1 class="display-4">Bootstrap 4 Cards With Background Image</h1>
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#000000cf" fill-opacity="0.9"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#000000cf" fill-opacity="0.9"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<section class="wrapper">
+  <div class="container">
+
+
+
+
+    <div class="row">
+      <div class="col text-center mb-5">
+         <h1 class="display-4">Bootstrap 4 Cards With Background Image</h1>
+  <p class="lead">Lorem ipsum dolor sit amet at enim hac integer volutpat maecenas pulvinar. </p>
+      </div>
+    </div>
+
+
+
+
+
+
+      </div>
+  
+
+</section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <script src='javascript/js.js'></script>

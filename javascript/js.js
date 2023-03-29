@@ -92,10 +92,7 @@ function returnAll(){
 const screenWidth = window.screen.width
 const screenHeight = window.screen.height
 
-alert(screenWidth)
-alert(screenHeight)
-//alert(document.querySelector('.mobileMenu').style.maxHeight)
-document.querySelector('.mobileMenu').style.maxHeight = screenHeight
+
 //alert(document.querySelector('.mobileMenu').style.maxHeight)
 
 //document.addEventListener('focus', (event) => {alert(document.activeElement.tagName)});
