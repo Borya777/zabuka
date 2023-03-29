@@ -19,3 +19,11 @@
 	column-gap: 5px;
 
 }
+
+.input_panel{
+	padding: 10px;
+}
+
+input.rootwr {
+	width: 500px;
+}

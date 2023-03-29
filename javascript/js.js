@@ -141,6 +141,7 @@ function change_color(fcolor, scolor){
 	document.querySelector(".pidorasiki").innerHTML = res;
 	document.querySelector("input[type=fcolor]").value = getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color');
 	document.querySelector("input[type=scolor]").value = getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color2');
+	document.querySelector("input[class=rootwr]").placeholder = document.querySelector(".pidorasiki").innerHTML
 
 	//fcolor.value = 'JOPA';
 
@@ -150,6 +151,10 @@ function change_color(fcolor, scolor){
 document.documentElement.style.cssText = "--main-bg-color: " + random_hex_color() + ";--main-bg-color2: " + random_hex_color();
 document.querySelector("input[type=fcolor]").value = getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color');
 document.querySelector("input[type=scolor]").value =getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color2');
+document.querySelector("input[class=rootwr]").placeholder = document.querySelector(".pidorasiki").innerHTML
 
 
-
+function check_root(querySe = '.rootwr'){
+	var variable = document.querySelector(querySe)
+	if (variable.value != ""){document.documentElement.style.cssText = variable.value}
+}
