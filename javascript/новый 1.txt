@@ -1,0 +1,10 @@
+
+bloody_rain
+--main-bg-color: #321414;--main-bg-color2: #C3C3B7;
+--main-bg-color: #321414;--main-bg-color2: #C3C3B7;
+
+
+y-b
+--main-bg-color: #F1CE56;--main-bg-color2: #2758B7;
+g-b
+--main-bg-color: #C7EA50;--main-bg-color2: #0C3571;

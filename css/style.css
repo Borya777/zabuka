@@ -2,9 +2,8 @@
 
 
 :root{
-  --main-bg-color2: #ffffff;
-  --mine: #ffffff;
-  --main-bg-color: #000000;
+  --main-bg-color2: #321414;
+  --main-bg-color: #C3C3B7;
   
 }
 
@@ -14,9 +13,11 @@
 body {
 
 
-  min-height: 75rem;
-  background: linear-gradient(45deg, var(--main-bg-color), var(--main-bg-color2));
-
+  --degrees:-45deg;
+  //background: var(--main-bg-color);
+  //box-shadow: 0 -1000px 5000px -200px var(--main-bg-color2) inset;
+  background: linear-gradient(var(--degrees), var(--main-bg-color), var(--main-bg-color2));
+  animation: deg-changes 12s  infinite alternate;
 }
 
 
@@ -152,3 +153,9 @@ column-gap: 3px;
   overflow-y:scroll
 }
 
+
+.borderstyle{
+  background: #ffffff70;
+  border: ridge;
+  border-radius: 10px;
+}

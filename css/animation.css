@@ -41,3 +41,19 @@
     }
     
  }
+
+
+ @keyframes background-changes {   
+  50% {
+    background: var(--main-bg-color2) ;
+    box-shadow: 0 -100px 100px -100px var(--main-bg-color) inset;
+  }
+
+}
+
+ @keyframes deg-changes {   
+ 1% {--degrees:-46deg;}2% {--degrees:-47deg;}3% {--degrees:-48deg;}4% {--degrees:-49deg;}5% {--degrees:-50deg;}6% {--degrees:-51deg;}7% {--degrees:-52deg;}8% {--degrees:-53deg;}9% {--degrees:-54deg;}10% {--degrees:-55deg;}11% {--degrees:-56deg;}12% {--degrees:-57deg;}13% {--degrees:-58deg;}14% {--degrees:-59deg;}15% {--degrees:-60deg;}16% {--degrees:-61deg;}17% {--degrees:-62deg;}18% {--degrees:-63deg;}19% {--degrees:-64deg;}20% {--degrees:-65deg;}21% {--degrees:-66deg;}22% {--degrees:-67deg;}23% {--degrees:-68deg;}24% {--degrees:-69deg;}25% {--degrees:-70deg;}26% {--degrees:-71deg;}27% {--degrees:-72deg;}28% {--degrees:-73deg;}29% {--degrees:-74deg;}30% {--degrees:-75deg;}31% {--degrees:-76deg;}32% {--degrees:-77deg;}33% {--degrees:-78deg;}34% {--degrees:-79deg;}35% {--degrees:-80deg;}36% {--degrees:-81deg;}37% {--degrees:-82deg;}38% {--degrees:-83deg;}39% {--degrees:-84deg;}40% {--degrees:-85deg;}41% {--degrees:-86deg;}42% {--degrees:-87deg;}43% {--degrees:-88deg;}44% {--degrees:-89deg;}45% {--degrees:-90deg;}46% {--degrees:-91deg;}47% {--degrees:-92deg;}48% {--degrees:-93deg;}49% {--degrees:-94deg;}50% {--degrees:-93deg;}51% {--degrees:-92deg;}52% {--degrees:-91deg;}53% {--degrees:-90deg;}54% {--degrees:-89deg;}55% {--degrees:-88deg;}56% {--degrees:-87deg;}57% {--degrees:-86deg;}58% {--degrees:-85deg;}59% {--degrees:-84deg;}60% {--degrees:-83deg;}61% {--degrees:-82deg;}62% {--degrees:-81deg;}63% {--degrees:-80deg;}64% {--degrees:-79deg;}65% {--degrees:-78deg;}66% {--degrees:-77deg;}67% {--degrees:-76deg;}68% {--degrees:-75deg;}69% {--degrees:-74deg;}70% {--degrees:-73deg;}71% {--degrees:-72deg;}72% {--degrees:-71deg;}73% {--degrees:-70deg;}74% {--degrees:-69deg;}75% {--degrees:-68deg;}76% {--degrees:-67deg;}77% {--degrees:-66deg;}78% {--degrees:-65deg;}79% {--degrees:-64deg;}80% {--degrees:-63deg;}81% {--degrees:-62deg;}82% {--degrees:-61deg;}83% {--degrees:-60deg;}84% {--degrees:-59deg;}85% {--degrees:-58deg;}86% {--degrees:-57deg;}87% {--degrees:-56deg;}88% {--degrees:-55deg;}89% {--degrees:-54deg;}90% {--degrees:-53deg;}91% {--degrees:-52deg;}92% {--degrees:-51deg;}93% {--degrees:-50deg;}94% {--degrees:-49deg;}95% {--degrees:-48deg;}96% {--degrees:-47deg;}97% {--degrees:-46deg;}98% {--degrees:-45deg;}99% {--degrees:-44deg;}100% {--degrees:-43deg;}
+  
+
+
+}
