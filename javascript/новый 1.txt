@@ -37,3 +37,16 @@ g-b
 --main-bg-color: #538576;--main-bg-color2: #C7292D;
 --main-bg-color: #8DA6A7;--main-bg-color2: #64F45D;
 --main-bg-color: #ABA447;--main-bg-color2: #483661;
+
+
+
+--main-bg-color: #E9E81D;--main-bg-color2: #430333;
+--main-bg-color: #5BB3C8;--main-bg-color2: #5A021A;
+--main-bg-color: #F9C386;--main-bg-color2: #0163A3;
+--main-bg-color: #ABA447;--main-bg-color2: #483661;
+--main-bg-color: #90E180;--main-bg-color2: #1E1DEB;
+--main-bg-color: #E9E81D;--main-bg-color2: #430333;
+--main-bg-color: #A9C2E9;--main-bg-color2: #9E7F12;
+--main-bg-color: #B7AE7C;--main-bg-color2: #3C7597;
+--main-bg-color: #EF63F2;--main-bg-color2: #12A46E;
+--main-bg-color: #EDABB4;--main-bg-color2: #2225C3;

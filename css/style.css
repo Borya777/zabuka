@@ -163,6 +163,15 @@ column-gap: 3px;
 }
 
 
-.nav-link{
+.animated_card{
 
+  overflow: hidden;
+}
+
+.animated_card:hover{
+  transform: scale(1.01);
+}
+.purchases{
+  text-shadow: 1px 1px 5px black;
+  font-size: calc(1.7rem + 0.5vw);
 }

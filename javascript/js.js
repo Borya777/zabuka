@@ -5,6 +5,7 @@ var menuBar = false;
 var background_couple = [['#E9E81D', '#430333'], ['#5BB3C8', '#5A021A'], ['#F9C386', '#0163A3'], ['#ABA447', '#483661'], ['#90E180', '#1E1DEB'], ['#EDABB4', '#2225C3']]
 
 
+
 function random_elem(array = background_couple){
 	random_var = Math.random();
 	real_length = array.length;
