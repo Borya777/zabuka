@@ -2,9 +2,12 @@
 
 
 :root{
-  --main-bg-color2: #321414;
-  --main-bg-color: #C3C3B7;
-  
+  //--main-bg-color2: #321414;
+  //--main-bg-color: #C3C3B7;
+  --main-bg-color: #f1ce56;
+  --main-bg-color2: #6fa8dc;
+  --main-bg-color3: #6fa8dc40;
+  --main-bg-color4: #6fa8dc20;
 }
 
 
@@ -35,7 +38,7 @@ body {
     padding-top: 0px;
     padding-bottom: 0px;
     border-bottom-width: 0px;
-    transition: width 2s, opacity 1.2s;
+    transition: width 1s, opacity 1.2s;
 }
 
 
@@ -158,4 +161,8 @@ column-gap: 3px;
   background: #ffffff70;
   border: ridge;
   border-radius: 10px;
+}
+
+.nav-link{
+
 }

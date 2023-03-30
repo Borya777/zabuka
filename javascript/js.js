@@ -2,6 +2,17 @@ var menuBar = false;
 
 
 
+var background_couple = [['#F1CE56', '#2758B7'], ['#f1ce56', '#6fa8dc'], ['#F45232', '#2B74A8'], ['#368E6D', '#494674'], ['#4F2954', '#55F763'], ['#E9E81D', '#430333'], ['#5E27AD', '#BDA000'], ['#C36B47', '#5A3EA7'], ['#C36B47', '#A5E9AC'], ['#093280', '#93F4AD'], ['#B5B9D1', '#4F5279'], ['#296F55', '#F58A0A'], ['#F9C386', '#0163A3'], ['#5BB3C8', '#5A021A'], ['#3B945C', '#8C1C58'], ['#B89566', '#8EF1E6'], ['#4A8B8B', '#D8853B'], ['#427055', '#1E5E9F'], ['#057C62', '#7F89A3'], ['#80724B', '#E79573'], ['#538576', '#C7292D'], ['#8DA6A7', '#64F45D'], ['#ABA447', '#483661']]
+
+
+
+function random_elem(array = background_couple){
+	random_var = Math.random();
+	real_length = array.length;
+	return array[Math.floor(random_var*real_length)]
+}
+
+
 
 var InputMainMenu = document.querySelector('form>div>input');
 var ButtonSearch = document.querySelector('form>button');
@@ -116,19 +127,46 @@ return color;}
 function make_data_to_write_css_var(variable, color_to_write, prefixes = ';'){
 	return variable + ": " + color_to_write + prefixes
 }
+function change_background_color_gradient(f_color, s_color){
+	var f1 = '--main-bg-color'
+	var f2 = '--main-bg-color2'
+	var f3 = '--main-bg-color3'
+	var f4 = '--main-bg-color4'
+	var res = make_data_to_write_css_var(f1, f_color)
+	res += make_data_to_write_css_var(f2, s_color)
+	res += make_data_to_write_css_var(f3, s_color + '50')
+	res += make_data_to_write_css_var(f3, s_color + '25')
+	document.documentElement.style.cssText = res
+	document.querySelector(".pidorasiki").innerHTML = res;
+	document.querySelector("input[type=fcolor]").value = getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color');
+	document.querySelector("input[type=scolor]").value = getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color2');
+	document.querySelector("input[class=rootwr]").placeholder = document.querySelector(".pidorasiki").innerHTML
+	
+}
+
+function ch_bg(){
+	couple = random_elem()
+	change_background_color_gradient(couple[0], couple[1])
+}
+
 
 function change_color(fcolor, scolor){
 	var f1 = '--main-bg-color'
 	var f2 = '--main-bg-color2'
+	var f3 = '--main-bg-color3'
+	var f4 = '--main-bg-color4'
 	
 	if (check_status('input[name=ch1]')){c1 = random_hex_color()}
 	else {var c1 = fcolor.value}
-	
 	if (check_status('input[name=ch2]')){c2 = random_hex_color()}
 	else {var c2 = scolor.value}
 	
 	var res = make_data_to_write_css_var(f1, c1)
 	res += make_data_to_write_css_var(f2, c2)
+	res += make_data_to_write_css_var(f3, c2 + '50')
+	res += make_data_to_write_css_var(f3, c2 + '25')
+	
+	
 	document.documentElement.style.cssText = res
 	
 	
@@ -163,3 +201,6 @@ function check_root(querySe = '.rootwr'){
 function check_jumba(){
 	alert(document.querySelector("body").style.background = 'linear-gradient(var(--degrees), #C3C3B7, #321414)')
 }
+
+
+ch_bg()
