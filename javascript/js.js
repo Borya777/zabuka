@@ -83,11 +83,13 @@ function returnAll(){
 	var  selected = document.querySelectorAll('.widthShrinOut');
 	selected.forEach(function(userItem) {
 		userItem.style.animationName = "widthShrinIn"
+		userItem.className += "";
 	})
 	
 		var  selected = document.querySelectorAll('.widthShrin');
 	selected.forEach(function(userItem) {
 		userItem.style.animationName = "widthShrinOut"
+		userItem.classList.remove("overflow_hidden");
 	})
 	menuBar = false;
 	
@@ -137,11 +139,7 @@ function change_background_color_gradient(f_color, s_color){
 	res += make_data_to_write_css_var(f3, s_color + '50')
 	res += make_data_to_write_css_var(f3, s_color + '25')
 	document.documentElement.style.cssText = res
-	document.querySelector(".pidorasiki").innerHTML = res;
-	document.querySelector("input[type=fcolor]").value = getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color');
-	document.querySelector("input[type=scolor]").value = getComputedStyle(document.documentElement).getPropertyValue('--main-bg-color2');
-	document.querySelector("input[class=rootwr]").placeholder = document.querySelector(".pidorasiki").innerHTML
-	
+		
 }
 
 function ch_bg(){

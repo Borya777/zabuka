@@ -1,4 +1,11 @@
 
+.overflow_hidden{
+   overflow: hidden;
+}
+.overflow_inherit{
+   overflow: inherit;
+}
+
 .widthShrin {
             /*animation-name: fadeOutRight;*/
             overflow: inherit;
@@ -17,6 +24,36 @@
 
          
  @keyframes widthShrinIn {
+    0% {overflow: inherit;
+
+       opacity: 1;
+       width: 250px;
+    }
+    100% {
+      overflow: hidden;
+       opacity: 0;
+       width:0%;
+    }
+ }
+
+ @keyframes widthShrinOut {
+   0% {
+      overflow: hidden;
+       opacity: 0;
+       width:0%;
+    }
+
+    100% {
+      overflow: inherit;
+       opacity: 1;
+       //transform: translateX(0);
+       width: 250px;
+
+    }
+    
+ }
+
+ @keyframes widthShrinIn2 {
     0% {
        opacity: 1;
        width: 250px;
@@ -27,7 +64,8 @@
     }
  }
 
- @keyframes widthShrinOut {
+
+ @keyframes widthShrinOut2 {
    0% {
        opacity: 0;
        width:0%;
