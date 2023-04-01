@@ -227,6 +227,7 @@ display: flex;
 
 
 .h7raki{
+  padding-right: 8px;
 font-size: 2vh;
 color: gray;
 text-shadow: 2px 2px 3px var(--bs-black);
