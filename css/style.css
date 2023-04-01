@@ -141,7 +141,7 @@ column-gap: 3px;
 .mobailul{
   margin:auto;
   width: 90%;
-  max-height: 130px;
+  max-height: 250px;
   overflow: hidden;
   overflow-y:scroll
 }
@@ -174,4 +174,11 @@ column-gap: 3px;
 .purchases{
   text-shadow: 1px 1px 5px black;
   font-size: calc(1.7rem + 0.5vw);
+}
+
+
+
+.get_more{
+  width:250px;
+  margin:auto;
 }
