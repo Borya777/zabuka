@@ -84,9 +84,11 @@ body {
 }
 
 .bd-placeholder-img {
-  
+  //background: #1fffff5f;
   background-size: cover;
 }
+
+
 
 .cth{
   height: 100%;
