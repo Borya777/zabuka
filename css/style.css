@@ -1,4 +1,5 @@
 
+body {padding-bottom: 0px}
 
 
 :root{
@@ -189,6 +190,7 @@ column-gap: 3px;
 
 .jara{
   padding-top: 3vh;
+  padding-bottom: 3vh;
   width: 100%;
   background-color: antiquewhite;
 }
@@ -212,12 +214,19 @@ display: flex;
     flex: 0 0 auto;
     width: 50%;
 }
+iframe{width:500px;}
+.about_in{display: flex;}
 }
+
 @media (max-width: 767px){
 .raki {
   display: none;
 
 }
+iframe{width:auto;}
+.about_in{display: block!important;}
+.col-lg-72{width: 100%!important;}
+.lead{width: 100%!important;}
 }
 
 
@@ -241,4 +250,34 @@ flex-direction: row-reverse;
 
 .text_align_end{
   text-align: end;
+}
+
+
+.map_section{
+
+  display: flex;
+  justify-content: center;
+}
+
+.map{
+  width: 300px;
+}
+
+.about{
+  width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.about_in{
+  display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-025{
+  text-align: center;
 }
