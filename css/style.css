@@ -281,3 +281,11 @@ flex-direction: row-reverse;
 .mb-025{
   text-align: center;
 }
+.antijara{background-color: antiquewhite;
+  padding-bottom: 3vh;
+}
+
+
+.py-5 {
+    padding-top: 1rem!important;
+  }
