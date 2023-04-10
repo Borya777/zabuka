@@ -10,159 +10,13 @@
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/features.css">
     <link rel="stylesheet" href="css/pobalovatsa.css">
+    <link rel="stylesheet" href="css/catala.css">
     
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   </head>
   <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4" style="z-index: 15;">
 
-
-
-<!-- Меню для Компов -->
-  <div class="container-fluid computer767">
-
-    <div class="hm">
-    <div class="clickable2-element widthShrinOut" style="width:0;" onclick='returnAll()'>➥</div>
-</div>
-
-
-
-    <a class="navbar-brand widthShrin" style="overflow: inherit;" href="#">МАГАЗИН</a>
-    
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0 widthShrin">
-        <li class="nav-item widthShrin">
-          <a class="nav-link active" href="#" style="width:fit-content; text-align: center;">ГЛАВНАЯ</a>
-        </li>
-        <li class="nav-item widthShrin">
-          <a class="nav-link" href="#" style="width:fit-content; text-align: center;">КОНТАКТЫ</a>
-        </li>
-        <li class="nav-item widthShrin">
-          <a style="width:140px;"" class="nav-link active " aria-current="page" href="#"  onclick='var isAdmin = confirm("Cкопировать номер телефона?"); alert( isAdmin );'>8(912)324-96-41</a>
-        </li>
-
-      </ul>
-      <form class="d-flex d-flex2 " role="search">
-        <div class="search_panel d-flex d-flex2">
-        <input class="form-control form-control2 me-22 me-2" type="search" placeholder="Искать" aria-label="Search" onclick="widthShrinIn2('.widthShrin'); widthShrinOut2('.widthShrinOut');  document.querySelector('form>div>input').style.opacity = '1'; document.querySelector('form>div>input').style.width = '100%'; menuBar = true">
-        <div class="btn btn-outline-success" 
-        onmousemove = 'alerts(1)' onmouseout = "alerts(0)" onclick="widthShrinIn('.widthShrin'); widthShrinOut('.widthShrinOut'); checkMenu()">ПОИСК</div></div>
-
-        <button class="btn btn-outline-success widthShrin" type="submit" "><p class = "inbutton">КОРЗИНА</p> <p class = "inbutton">0</p></button>
-      </form>
-    </div>
-  </div>
-
-<!-- Меню для мобилок -->
-
-<div class="container-fluid mobail767">
-      <a class="navbar-brand" href="#">Never expand</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse"  id="navbarsExample01" style="
-    overflow-y: scroll;
-    max-height: 80vh;
-">
-        <ul class="navbar-nav me-auto mb-2">
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">КАТЕГОРИИ</a>
-            <ul class="dropdown-menu mobailul"">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">КАТЕГОРИИ</a>
-            <ul class="dropdown-menu mobailul"">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-
-
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">КАТЕГОРИИ</a>
-          </li>
-
-          <li class="nav-item">
-                      <button class="btn btn-outline-success" type="submit"><p style='margin-bottom: 0;'>КОРЗИНА</p><p style='margin-bottom: 0;'>0</p></button>
-          </li>
-
-
-
-        </ul>
-        <form role="search" class='search-mobile'>
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">ПОИСК</button>
-        </form>
-      </div>
-</div>
-
-
-
-</nav>
 
 
 
@@ -170,131 +24,23 @@
 <!-- Меню ЗАкончилось, начинается настоящий движ -->
 <!-- каркуслеь -->
 <main>
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
 
-    <div class="carousel-indicators">
+<div class="card_shop">
+ <h1 style="
+    text-align: center;">Плитка Монтажная - Лена вся влажная</h1>
 
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-
-        <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#0000002f" fill-opacity="0.9"/></svg>
-        <div class="container">
-              <h1 class="display-4">Bootstrap 4 Cards With Background Image</h1>
-          <div class="carousel-caption text-start cth">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#0000002f" fill-opacity="0.9"/></svg>
-        <div class="container">
-          <div class="carousel-caption cth">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#0000002f" fill-opacity="0.9"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-end cth">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-<section class="wrapper">
-  <div class="container">
+<section>
+    <div class="container">
+        <div class="carousel">
 
 
+            <ul class="carousel__slides">
+                <li class="carousel__slide">
+                    <figure>
+                        <div style = "display: flex;">
+                           <img class = 'current_image', style = "
 
-<!--Наш махазин-->
-    <div class="row">
-      <div class="col text-center mb-5">
-         <h1 class="display-4 borderstyle">Bootstrap 4 Cards With Background Image</h1>
-  <p class="lead borderstyle">Lorem ipsum dolor sit amet at enim hac integer volutpat maecenas pulvinar. </p>
-      </div>
-    </div>
-
-<div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom borderstyle" style="text-align: center;">Custom cards</h2>
-
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col overflow-hidden shadow-lg">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg animated_card" style="background-image: url('img/unsplash-photo-3.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class= "purchases" style="text-align:center;">Плитка вибропресованная</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3" style="column-gap: 5px;">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                <small class = "purchases">3000</small>
-                <small class = "purchases">₽</small>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col overflow-hidden shadow-lg">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg animated_card" style="background-image: url('img/unsplash-photo-1.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class= "purchases" style="text-align:center;">Плитка вибропресованная</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3" style="column-gap: 5px;">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                <small class = "purchases">3000</small>
-                <small class = "purchases">₽</small>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col overflow-hidden shadow-lg">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg animated_card" style="background-image: url('img/unsplash-photo-2.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class= "purchases" style="text-align:center;">Плитка вибропресованная</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3" style="column-gap: 5px;">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                <small class = "purchases">3000</small>
-                <small class = "purchases">₽</small>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
+" id="current" src="img/unsplash-photo-1.jpg" alt="" onClick="swipe('#' + this.id);">
 
 
 
@@ -302,245 +48,182 @@
 
 
 
+<div class = "after_ph2">
+<div class = 'desc'>
 
 
 
+  <div class = "labels">
+  <label id = "os1" onclick = "description('#'+this.id, '#content1')">
+      <span class="span_class">›</span>
+  </label>
+      <h1>описание</h1> 
+  </div> 
+
+  <span class = "hidden_class" id="content1"><div class="content"></div></span>
 
 
 
+  <div class = "labels">
+  <label id = "os2" onclick = "description('#'+this.id, '#content2')">
+      <span class="span_class">›</span>
+  </label>
+      <h1>цвет</h1> 
+  </div> 
+
+  <span class = "hidden_class" style="border:none;" id="content2"><div class="content" style = "background:none;"><div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
+        
+        <button type="button" class="btn btn-outline-primary" style = "   text-shadow:0px 0.6px black;">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success" onclick="alert('suces')">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning" style = "   text-shadow:0px 0.6px black;">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div></div></div>
 
 
-    </div>
-        <h2 class="pb-2 border-bottom borderstyle" style="text-align: center;"></h2>
-  </div>
+  </span>
 
-<div class="">
 
-  <p><a class="btn btn-lg btn-primary get_more" href="#">СМОТРЕТЬ БОЛЬШЕ</a></p>
-  
+
 
 </div>
-</section>
 
-<!--Довольные хлебальнички наших покупателей -->
+<div id="counter">
+<a class = "a_count" id="buttonCountPlus" onclick="counter(this.textContent)">-</a>
+<div id="buttonCountNumber">1</div>
+<a class = "a_count" id="buttonCountMinus" value="+" onclick="counter(this.textContent)">+</a>
 
-<section class="jara" style="border-top: 1.5px solid gray;  border-bottom: 12px solid;
-    border-bottom-color: lightgray;">
+<div id="measure">Квадратных метра</div>
+</div>
 
-  <div class='jora'><h3 class="mb-0">О НАС</h3></div>
-<div class="container">
-
-  <div class="p-4 p-md-5 mb-4 rounded text-bg-dark real directors_state">
-    <div class="col-md-6 px-0">
-      <h1 class="display-4 fst-italic">ПАПАША РИМСКИЙ</h>
-      <h7 class="display-4 fst-italic h7raki">Работник Азбука плитки</h7>
-      <p class="lead my-3">Азбука плитки - лидер на рынке. Помолимся же за ее благополучие: Lorem ipsum dolor sit amet at enim hac integer volutpat maecenas pulvinar.</p>
-      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
-    </div>
-
-
-    <div class="col-md-6 px-0 raki">
-              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg animated_card " style="background-image: url('img/image_2023-03-31_00-07-56.png');"></div>
-    </div>
-
-
-
-
-
-
-  </div>
-
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>        
-
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">Покупатель</strong>
-          <h3 class="mb-0">Саня Чорт</h3>
-          <div class="mb-1 text-body-secondary">Апрель 1</div>
-          <p class="card-text mb-auto">Плитка огонь, ваще четка на, мы с корешом ее в салоне девятки налепили, шоб рыжых тараканов прикрыть, так теперь это не таз с болтами, а античная боевая колесница самого Цезаря!... </p>
-          <a href="#" class="stretched-link">Читать полностью</a>
-        </div>
-
-
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success text_align_end">Сотрудник</strong>
-          <h3 class="mb-0 text_align_end">Вася</h3>
-          <div class="mb-1 text-body-secondary text_align_end">Ноябрь 11</div>
-          <p class="mb-auto">Плитка от "Монтажников" - результат невообразимых технологий, ранее не встречавщихся ни в природе, ни в мире, уникальная неповторимая текстура напоминает работы талантливых художников, смешавших водную гладь тихого океана с птичим гуано.</p>
-          <a href="#" class="stretched-link text_align_end">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
-      </div>
-
-
-
-
-
-    </div>
-  </div>
-  </div>
-
-
-<div class="">
-
-  <p><a class="btn btn-lg btn-primary get_more" href="#">ПЕРЕЙТИ К ОТЗЫВАМ</a></p>
-  
+<button type="button" class="btn btn-primary" style="margin-right: auto;
+    margin-left: auto; width: 90%; height: fit-content;">В КОРЗИНУ</button>
 
 </div>
 
 
+
+
+                        </div>
+                    </figure>
+                </li>               
+            </ul>    
+
+            <ul class="carousel__thumbnails">
+                <li>
+                    <label class= "grey">
+
+
+                      <img style = "
+    height: 150px;
+    width: 150px;
+" id="carousels_elem_1" class= "image_cars activision" src="img/unsplash-photo-2.jpg" alt="" onclick="active_elem('#' + this.id)"></label>
+                </li>
+                <li>
+                    <label class= "grey">
+
+
+                      <img style = "
+    height: 150px;
+    width: 150px;
+"  id="carousels_elem_2" class= "image_cars" src="img/unsplash-photo-3.jpg" alt="" onclick="active_elem('#' + this.id)"></label>
+                </li>
+                <li>
+                    <label class= "grey">
+
+
+                      <img id="carousels_elem_3" class= "image_cars" src="https://picsum.photos/id/1044/150/150" alt="" onclick="active_elem('#' + this.id)"></label>
+                </li>
+                <li>
+                    <label class= "grey">
+
+
+                      <img id="carousels_elem_4" class= "image_cars" src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label class= "grey">
+
+
+                      <img id="carousels_elem_5" class= "image_cars" src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label class= "grey">
+
+
+                      <img id="carousels_elem_6" class= "image_cars" src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 
 
 
-<section class="jara" style="border-top: 0px solid gray;">
-<div class="">
 
-  <h3 class="mb-025">НАШЕ МЕСТПОЛОЖЕНИЕ</h3>
-  
 
 </div>
 
-
-<div class="a_location">
-
-<div class="about">
-
-  <div class="about_in">
-    <div class="">
-      <div class="">
-        <a class="dg-widget-link" href="http://2gis.ru/chelyabinsk/firm/70000001051269400/center/61.42580509185792,55.248903631130936/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Челябинска</a><div class="dg-widget-link"><a href="http://2gis.ru/chelyabinsk/firm/70000001051269400/photos/70000001051269400/center/61.42580509185792,55.248903631130936/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ru/chelyabinsk/center/61.425133,55.247699/zoom/16/routeTab/rsType/bus/to/61.425133,55.247699╎Азбука плитки?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Азбука плитки</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":500,"height":400,"borderColor":"#a3a3a3","pos":{"lat":55.248903631130936,"lon":61.42580509185792,"zoom":16},"opt":{"city":"chelyabinsk"},"org":[{"id":"70000001051269400"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
-</div>
-      </div>
-      <div class="col-lg-72" style="width:50%;">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3
-        " style="">ООО АЗБУКА ПЛИТКИИ</h1>
-        <p class="lead" style = "width: 50%;">454038, Челябинская область, Металлургический район, Челябинский городской округ, Монтажников, 5в</p>
-        <p class="lead">Ежедневно: 09:00 - 19:00 Без права на обед</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">ПОДРОБНЕЕ</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">КАК ПРОЕХАТЬ</button>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class = "after_ph">
+<div class = 'desc'>
 
 
-  
 
-</div>
+  <div class = "labels">
+  <label id = "os1" onclick = "description('#'+this.id, '#content1')">
+      <span class="span_class">›</span>
+  </label>
+      <h1>описание</h1> 
+  </div> 
+
+  <span class = "hidden_class" id="content1"><div class="content"></div></span>
 
 
-<div class="container col-xl-10 col-xxl-8 px-4 py-5">
-    <div class="row align-items-center g-lg-5 py-5">
-      <div class="col-lg-7 text-center text-lg-start">
-        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">ОСТАЛИСЬ ВОПРОСЫ?</h1>
-        <p class="col-lg-10 fs-4">Оставьте ваши цифры, или киньте нам вашу почту, мы обязательно с вами свяжемся и подскажем, какой ремонт можно забабахать благодяря нашей плитке</p>
-      </div>
-      <div class="col-md-10 mx-auto col-lg-5">
-        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">нумбер телефона</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">почта (необязательно)</label>
-          </div>
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Предпочитаю связываться по почте
-            </label>
-          </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">ОТПРАВИТЬ</button>
-          <hr class="my-4">
-          <small class="text-body-secondary">By clicking ОТПРАВИТЬ, you agree to the terms of use.</small>
-        </form>
-      </div>
-    </div>
-  </div>
+
+  <div class = "labels">
+  <label id = "os2" onclick = "description('#'+this.id, '#content2')">
+      <span class="span_class">›</span>
+  </label>
+      <h1>цвет</h1> 
+  </div> 
+
+  <span class = "hidden_class" style="border:none;" id="content2"><div class="content" style = "background:none;"><div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
+        
+        <button type="button" class="btn btn-outline-primary" style = "   text-shadow:0px 0.6px black;">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success" onclick="alert('suces')">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning" style = "   text-shadow:0px 0.6px black;">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div></div></div>
+
+
+  </span>
 
 
 
 
-
-
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="bootstrap" viewBox="0 0 118 94">
-    <title>Bootstrap</title>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
-  </symbol>
-  <symbol id="facebook" viewBox="0 0 16 16">
-    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-  </symbol>
-  <symbol id="instagram" viewBox="0 0 16 16">
-      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-  </symbol>
-  <symbol id="twitter" viewBox="0 0 16 16">
-    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-  </symbol>
-</svg>
-
-
-
-<div class="container" style="border-top: 1.5px solid gray;">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="border-top: 1.5px solid gray;">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-      </a>
-      <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023, Азбука Плитки</span>
-    </div>
-
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-    </ul>
-  </footer>
 </div>
 
+<div id="counter">
+<a class = "a_count" id="buttonCountPlus" onclick="counter(this.textContent)">-</a>
+<div id="buttonCountNumber">1</div>
+<a class = "a_count" id="buttonCountMinus" value="+" onclick="counter(this.textContent)">+</a>
 
-</section>
+<div id="measure">Квадратных метра</div>
+</div>
 
+<button type="button" class="btn btn-primary" style="margin-right: auto;
+    margin-left: auto; width: 90%;">В КОРЗИНУ</button>
 
-
+</div>
+<script src='javascript/pobalovatsa.js'></script>
+<script src='javascript/js.js'></script>
+<script src='javascript/catala.js'></script>
 
 </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src='javascript/pobalovatsa.js'></script>
-    <script src='javascript/js.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animation.css">
-  </body>
-</html>
