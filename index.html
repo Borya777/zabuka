@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Checkout example · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
+
+    
+
+    
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/checkout.css" rel="stylesheet">
+ 
+
+    
+    <!-- Custom styles for this template -->
+    
+  </head>
+  <body class="bg-body-tertiary">
+
+    
+
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <h2>Сделать заказ</h2>
+    </div>
+
+
+    
+    <div class="row g-5">
+
+      <!-- корзинax -->
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Информация о заказе</span>
+          <span class="badge bg-primary rounded-pill">{3}</span>
+        </h4>
+        <ul class="list-group mb-3">
+
+          <!-- Первый элемент в корзине -->
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">{Плитка Мондажная}({3}})</h6>
+              <small class="text-body-secondary">{Красный}</small>
+            </div>
+            <span class="text-body-secondary">{12000} Р</span>
+          </li>
+          <!-- Первый элемент в корзине закончился-->
+
+          <!-- 2 элемент в корзине -->
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">{Плитка Шантажная}({1}})</h6>
+              <small class="text-body-secondary">{Пиздатый}</small>
+            </div>
+            <span class="text-body-secondary">{4000} Р</span>
+          </li>
+          <!-- 2 элемент в корзине закончился-->
+
+          <!-- скидка элемент в корзине -->
+          <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+            <div class="text-success">
+              <h6 class="my-0">Промокод</h6>
+              <small>{STASEL'S MAMIN DESIGN}</small>
+            </div>
+            <span class="text-success">−{3500} Р</span>
+          </li>
+
+          <!-- скидка элемент в корзине закончился-->
+
+
+          <!-- тотал элемент в корзине -->
+
+          <li class="list-group-item d-flex justify-content-between">
+            <span class="strong_price">ИТОГО</span>
+            <strong class="strong_price">{12500} Р</strong>
+          </li>
+
+          <!-- тотал элемент в корзине закончился-->
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Ввести промокод">
+            <button type="submit" class="btn btn-secondary">Применить</button>
+          </div>
+        </form>
+      </div>
+      <!-- корзинax закончилась-->
+
+      <!-- ВВод -->
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Ввести данные</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+
+            <div class="col-sm-6">
+              <label for="name" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Антон Валерьянович Чижиков" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Номер телефона</label>
+              <input type="text" class="form-control" id="lastName"  placeholder="+7(932)-019-28-75" required onclick="this.value = '+7'">
+              <div class="invalid-feedback">
+                Valid номер телефона is required.
+              </div>
+            </div>
+
+            
+            <div class="col-12">
+              <label for="email" class="form-label">Электронная почта <span class="text-body-secondary">(Необязательно)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="ваша@почта.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            
+
+          
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Оплата</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="in_person" name="paymentMethod" type="radio" class="form-check-input" checked onclick="form_check_si('#'+this.id)" required>
+              <label class="form-check-label" for="credit">При получении</label>
+            </div>
+
+            <div class="form-check">
+              <input onclick="form_check_si('#'+this.id)" id="card" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Натурой</label>
+            </div>
+
+          </div>
+
+
+          <div class="reqesits">
+            <div id = "card_reader" class="row gy-3">
+              <div class="col-md-6">
+                <label for="cc-name" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-body-secondary">Полное имя, как указанно на карте</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="cc-number" class="form-label">Номер</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <label for="cc-expiration" class="form-label">Дата</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <label for="cc-cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+    <p class="mb-1">&copy; 2017–2023 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="js/checkout.js"></script>
+  </body>
+</html>
