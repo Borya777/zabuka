@@ -73,11 +73,12 @@ background-color: red;
     transition: var(--real_transition);/* ---------------------------------------------------------------ПЕРЕМЕННАЯ 1*/
 
 }
-
-.Menu_button:hover > div{
+.content_menu_panel:hover > .Menu_button > div{
 	background-color: red;
 	 transition: var(--real_transition);/* ---------------------------------------------------------------ПЕРЕМЕННАЯ 1*/
 }
+
+
 
 
 .line:hover{
