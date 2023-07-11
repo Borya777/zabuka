@@ -1,8 +1,10 @@
 :root {
   --real_transition: 0.7s;
   --real_transition2: 0.16s;
-  --menu_height: calc(20px + 10vh);
-  --width_user_actions: calc(35vh + 100px);
+  --menu_height_mobail: calc(20px + 10vh);
+  --width_user_actions_mobail: calc(30vh + 100px);
+  --menu_height: calc(20px + 4vh);
+  --width_user_actions: calc(15vh + 75px);
 }
 
 
@@ -25,7 +27,7 @@ background-color: red;
 	height: var(--menu_height);
 	background-color: #FFC107;
 	align-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
 }
 
@@ -221,5 +223,8 @@ background-color: red;
 	position: absolute;
     padding-top: 0px;
     margin-bottom: 0px;
-    margin-top: 7px;
+    margin-top: 3px;
 }
+
+
+
