@@ -2,6 +2,7 @@
   --real_transition: 0.7s;
   --real_transition2: 0.16s;
   --menu_height: 40px;
+  --width_user_actions: 128px;
 }
 
 
@@ -119,8 +120,8 @@ background-color: red;
 	justify-content: space-evenly;
 	display: flex;
 	width: 100%;
-	height: 60px;
-	background-color: #df76c1;
+	height: 360px;
+	background-color: #bd32bb;
 
 
 }
@@ -128,23 +129,24 @@ background-color: red;
 #s12{
 	width: 100%;
 	height: 70px;
-	background-color: #6d227c;
+	background-color: #e3e950;
 }
 
 .se{
 	width: 30%;
 	height: 100%;
-	background-color: #44ff00;
+	background-color: #c3228d;
 }
 
 .vivo{
 	width: 30%;
 	height: 100%;
-	background-color: #38020f;
+	background-color: #a1324c;
 }
 
 .user_actions{
 	display: flex;
+
 }
 
 
@@ -156,7 +158,7 @@ background-color: red;
 
 }
 
-.loupeimg:hover{
+.content_menu_panel2:hover > .loupeimg{
 	width: 28px;
 	height: 28px;
 	transition: var(--real_transition2);	
@@ -170,7 +172,7 @@ background-color: red;
 	transition: var(--real_transition2);
 }
 
-.caseimg:hover{
+.content_menu_panel2:hover > .caseimg{
 	width: 28px;
 	height: 32px;
 	transition: var(--real_transition2);
@@ -179,10 +181,19 @@ background-color: red;
 .user_acc{
 	width: 25px;
 	height: 30px;	
+	transition: var(--real_transition2);
+
+}
+
+.content_menu_panel2:hover > .user_acc{
+	width: 30px;
+	height: 35px;	
+	transition: var(--real_transition2);
 
 }
 
 .content_menu_panel2{
+	overflow: hidden;
 	background-color: white;
 	display: flex;
     width: 40px;
@@ -194,5 +205,14 @@ background-color: red;
 }
 
 .user_actions{
-	column-gap: 10px;
+	justify-content: space-between;
+	width: var(--width_user_actions);
+	transition: var(--real_transition);
+}
+
+.count_case{
+	position: absolute;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 6px;
 }

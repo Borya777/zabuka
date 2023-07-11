@@ -1,11 +1,14 @@
 //alert('connected' alert(document.querySelector(".menu_panel").offsetHeight));//
 
-
-function alert2(param = 'Привет, Лера')
-{
-        alert(param)
+function collapse_elem(elem = '.user_actions'){
+        document.querySelector(elem).style.width = '0px'
 
 }
+
+function uncollapse_elem(elem = '.user_actions', variableValue = getComputedStyle(document.documentElement).getPropertyValue('--width_user_actions')){
+        document.querySelector(elem).style.width = variableValue
+}
+
 
 
 function updatePanelHeight(param_query = '.menu_panel', exchanger_query = '.heightV') {
@@ -25,11 +28,22 @@ function menu_cross(){
      var top_line = document.querySelector('#line_1');
      var bot_line = document.querySelector('#line_2');
      var menu_button = document.querySelector('.Menu_button');
+     document.querySelector('.count_case').style.display = 'none';
      menu_button.style.height = '100%'
-     top_line.style.transform = "rotate(45deg)";
-     bot_line.style.transform = "rotate(-45deg)";
+     menu_button.style.paddingLeft = '3.5px'
+     top_line.style.transform = "rotate(39.5deg)";
+     bot_line.style.transform = "rotate(-39.5deg)";
+
+     array = document.querySelectorAll('.line')/*.style.width = '25px';*/
+     for (elem in array){
+        try {array[elem].style.width = '21px';}
+        catch(e) {}
+        }
+/*
      top_line.style.transformOrigin = 'left top';
-     bot_line.style.transformOrigin = 'left bottom';
+     bot_line.style.transformOrigin = 'left bottom';*/
+     bot_line.style.transformOrigin = 'left top';
+     top_line.style.transformOrigin = 'left bottom';
 
 }
 
@@ -38,11 +52,21 @@ function menu_cross_reverse(){
      var top_line = document.querySelector('#line_1');
      var bot_line = document.querySelector('#line_2');
      var menu_button = document.querySelector('.Menu_button');
+     document.querySelector('.count_case').style.display = 'block';
      menu_button.style.height = '60%'
+     menu_button.style.paddingLeft = '0px'
      top_line.style.transform = "rotate(0deg)";
      bot_line.style.transform = "rotate(0deg)";
-     top_line.style.transformOrigin = 'left top';
-     bot_line.style.transformOrigin = 'left bottom';
+
+
+     array = document.querySelectorAll('.line')/*.style.width = '25px';*/
+     for (elem in array){
+        try {array[elem].style.width = '20px';}
+        catch(e) {}
+        }
+
+     bot_line.style.transformOrigin = 'left top';
+     top_line.style.transformOrigin = 'left bottom';
 
 }
 
@@ -136,6 +160,7 @@ function assemble_event_activity(classlist, active='active'){
 
         if (active_element == false){
                 menu_cross()
+                collapse_elem()
                 space_name = '.' + display_cur(classlist, '.')
                 classlist.push(active)
                 space_name_new = display_cur(classlist, ' ')
@@ -148,6 +173,7 @@ function assemble_event_activity(classlist, active='active'){
 
         else if(active_element == true){
                 menu_cross_reverse()
+                uncollapse_elem()
                 space_name = '.' + display_cur(classlist, '.')
                 classlist_new = delete_element_from_array(classlist, active)
                 space_name_new = display_cur(classlist_new, ' ')
