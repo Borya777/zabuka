@@ -1,5 +1,8 @@
 //alert('connected' alert(document.querySelector(".menu_panel").offsetHeight));//
 
+var menu_active = false
+
+
 function collapse_elem(elem = '.user_actions'){
         document.querySelector(elem).style.width = '0px'
 
@@ -159,6 +162,8 @@ function assemble_event_activity(classlist, active='active'){
 
 
         if (active_element == false){
+
+                menu_active = true
                 menu_cross()
                 collapse_elem()
                 space_name = '.' + display_cur(classlist, '.')
@@ -172,6 +177,7 @@ function assemble_event_activity(classlist, active='active'){
         }
 
         else if(active_element == true){
+                menu_active = false
                 menu_cross_reverse()
                 uncollapse_elem()
                 space_name = '.' + display_cur(classlist, '.')
@@ -204,5 +210,8 @@ function change_smth(query = document.querySelector('.user_actions'), value = ge
 /*    EVENTS                     */
 window.addEventListener('resize', function() {
   var screenWidth = window.innerWidth;
-  uncollapse_elem()
+
+  if (menu_active == false) {uncollapse_elem()}
+
+  
 });
