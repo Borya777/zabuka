@@ -119,8 +119,8 @@ background-color: red;
 	justify-content: space-evenly;
 	display: flex;
 	width: 100%;
-	height: 360px;
-	background-color: #bd32bb;
+	height: 60px;
+	background-color: #df76c1;
 
 
 }
@@ -128,19 +128,19 @@ background-color: red;
 #s12{
 	width: 100%;
 	height: 70px;
-	background-color: #e3e950;
+	background-color: #6d227c;
 }
 
 .se{
 	width: 30%;
 	height: 100%;
-	background-color: #c3228d;
+	background-color: #44ff00;
 }
 
 .vivo{
 	width: 30%;
 	height: 100%;
-	background-color: #a1324c;
+	background-color: #38020f;
 }
 
 .user_actions{
@@ -179,14 +179,6 @@ background-color: red;
 .user_acc{
 	width: 25px;
 	height: 30px;	
-	transition: var(--real_transition2);
-
-}
-
-.user_acc:hover{
-	width: 30px;
-	height: 35px;	
-	transition: var(--real_transition2);
 
 }
 
