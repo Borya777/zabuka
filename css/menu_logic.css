@@ -1,10 +1,11 @@
 :root {
   --real_transition: 0.7s;
   --real_transition2: 0.16s;
-  --menu_height_mobail: calc(20px + 10vh);
-  --width_user_actions_mobail: calc(30vh + 100px);
-  --menu_height: calc(20px + 4vh);
-  --width_user_actions: calc(15vh + 75px);
+  --menu_height: calc(10px + 4vh);
+  --width_user_actions: calc(13vh + 50px);
+
+  --menu_height_mobail: calc(20px + 8vh);
+  --width_user_actions_mobail: calc(23vh + 120px);
 }
 
 
@@ -19,8 +20,53 @@ background-color: red;
 }
 */
 
+@media (min-width: 601px){
+
+	:root{
+		--width_user_actions: calc(13vh + 50px);
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	:root{
+		--width_user_actions: calc(25vh + 100px);
+	}
+
+	body{
+		background-color: grey;
+	}
+	.menu_panel{
+		height: var(--menu_height_mobail) !important;
+	}
+
+	.nested{
+		height: var(--menu_height_mobail) !important;
+	}
+
+	.content_menu_panel{
+		width: var(--menu_height_mobail) !important;
+	}
+
+	.content_menu_panel2{
+		width: var(--menu_height_mobail) !important;
+	}
+
+	.line{
+		width: calc(var(--menu_height_mobail)/1.9) !important;
+		height: calc(var(--menu_height_mobail)/16) !important;
+	}
+
+		.user_actions{
+		width: var(--width_user_actions_mobail);
+	}
+
+
+}
+
 .menu_panel{
-	justify-content: space-between;
+	justify-content: center;
 	display: flex;
 	width: 100%;
 	/*height: 40px;*/
@@ -228,3 +274,15 @@ background-color: red;
 
 
 
+.nested{
+	justify-content: space-between;
+    display: flex;
+    width: 98%;
+    /* height: 40px; */
+    height: var(--menu_height);
+    background-color: #FFC107;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+}

@@ -194,4 +194,15 @@ function getNestedDivClass(event) {
   assemble_event_activity(nestedDivClass, active='active') // Вывод класса вложенного div в консоль или выполнение других операций
 }}
 
+function change_smth(query = document.querySelector('.user_actions'), value = getComputedStyle(document.documentElement).getPropertyValue('--width_user_actions')){
 
+
+}
+
+
+
+/*    EVENTS                     */
+window.addEventListener('resize', function() {
+  var screenWidth = window.innerWidth;
+  uncollapse_elem()
+});
