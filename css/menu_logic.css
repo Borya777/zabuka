@@ -1,8 +1,8 @@
 :root {
   --real_transition: 0.7s;
   --real_transition2: 0.16s;
-  --menu_height: 40px;
-  --width_user_actions: 128px;
+  --menu_height: calc(30px + 5vh);
+  --width_user_actions: calc(20vh + 100px);
 }
 
 
@@ -46,7 +46,7 @@ background-color: red;
 .content_menu_panel{
 	background-color: white;
 	display: flex;
-    width: 40px;
+    width: var(--menu_height);
     height: 100%;
     /* width: auto; */
     justify-content: center;
@@ -55,8 +55,10 @@ background-color: red;
 
 }
 
+
+
 .line{
-	width:20px;
+	width: calc(var(--menu_height)/1.9);
 	height: 2px;
 	background: black;
 }
@@ -80,12 +82,12 @@ background-color: red;
 
 .line:hover{
 	transform-origin: left top;
-	transition: var(--real_transition);/* ---------------------------------------------------------------ПЕРЕМЕННАЯ 1*/
+	transition: transform-origin var(--real_transition);/* ---------------------------------------------------------------ПЕРЕМЕННАЯ 1*/
 }
 
 .line{
 	transform-origin: left top;
-	transition: var(--real_transition);/* ---------------------------------------------------------------ПЕРЕМЕННАЯ 1*/
+	transition: transform-origin var(--real_transition);/* ---------------------------------------------------------------ПЕРЕМЕННАЯ 1*/
 
 }
 
@@ -152,42 +154,42 @@ background-color: red;
 
 
 .loupeimg{
-	width: 25px;
-	height: 25px;
+	width: 70%;
+	height: 70%;
 	transition: var(--real_transition2);	
 
 }
 
 .content_menu_panel2:hover > .loupeimg{
-	width: 28px;
-	height: 28px;
+	width: 85%;
+	height: 85%;
 	transition: var(--real_transition2);	
 
 }
 
 
 .caseimg{
-	width: 25px;
-	height: 29px;
+	width: 65%;
+	height: 70%;
 	transition: var(--real_transition2);
 }
 
 .content_menu_panel2:hover > .caseimg{
-	width: 28px;
-	height: 32px;
+	width: 70%;
+	height: 80%;
 	transition: var(--real_transition2);
 }
 
 .user_acc{
-	width: 25px;
-	height: 30px;	
+	width: 55%;
+	height: 75%;	
 	transition: var(--real_transition2);
 
 }
 
 .content_menu_panel2:hover > .user_acc{
-	width: 30px;
-	height: 35px;	
+	width: 61%;
+	height: 80%;	
 	transition: var(--real_transition2);
 
 }
@@ -196,7 +198,7 @@ background-color: red;
 	overflow: hidden;
 	background-color: white;
 	display: flex;
-    width: 40px;
+    width: var(--menu_height);
     height: 100%;
     /* width: auto; */
     justify-content: center;
@@ -211,8 +213,9 @@ background-color: red;
 }
 
 .count_case{
+	font-size: calc(var(--menu_height)/2);
 	position: absolute;
     padding-top: 0px;
     margin-bottom: 0px;
-    margin-top: 6px;
+    margin-top: 7px;
 }

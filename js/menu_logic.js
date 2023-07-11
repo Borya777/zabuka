@@ -34,11 +34,11 @@ function menu_cross(){
      top_line.style.transform = "rotate(39.5deg)";
      bot_line.style.transform = "rotate(-39.5deg)";
 
-     array = document.querySelectorAll('.line')/*.style.width = '25px';*/
+     /*array = document.querySelectorAll('.line').style.width = '25px';
      for (elem in array){
         try {array[elem].style.width = '21px';}
         catch(e) {}
-        }
+        }*/
 /*
      top_line.style.transformOrigin = 'left top';
      bot_line.style.transformOrigin = 'left bottom';*/
@@ -58,12 +58,12 @@ function menu_cross_reverse(){
      top_line.style.transform = "rotate(0deg)";
      bot_line.style.transform = "rotate(0deg)";
 
-
-     array = document.querySelectorAll('.line')/*.style.width = '25px';*/
+     /*
+     array = document.querySelectorAll('.line')/*.style.width = '25px';
      for (elem in array){
         try {array[elem].style.width = '20px';}
         catch(e) {}
-        }
+        }*/
 
      bot_line.style.transformOrigin = 'left top';
      top_line.style.transformOrigin = 'left bottom';
