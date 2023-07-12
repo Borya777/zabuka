@@ -32,6 +32,13 @@ background-color: red;
 		--width_user_actions: calc(13vh + 50px);
 	}
 
+	.back{
+		font-size: calc(var(--menu_height)/1.0);
+	}
+
+	.search_form button {
+  padding: 10px 20px;}
+
 }
 
 @media (max-width: 600px) {
@@ -65,7 +72,18 @@ background-color: red;
 		width: var(--width_user_actions_mobail);
 	}
 
+	.back{
+		font-size: calc(var(--menu_height)/1.4);
+	}
 
+	.search_form button {
+  padding: 10px 2px;}
+
+
+}
+
+.width_auto{
+	width: var(--menu_height_) !important;
 }
 
 .menu_panel{
@@ -370,7 +388,6 @@ a {
 
 
 .back{
-	font-size: calc(var(--menu_height)/1.0);
 	transition: color var(--real_transition), font-size var(--real_transition2);
 	rotate: 180deg;
 	padding-bottom: 5px;
@@ -392,10 +409,10 @@ a {
 }
 
 .input_form{
+	width: 100%;
 	display: flex;
 	height: 100%;
-	width: calc(100vw - var(--menu_height));
-	background-color: red;
+	background-color: white;
 
 }
 
@@ -411,4 +428,34 @@ button{
 
 html{
 
+}
+
+
+.search_form {
+	padding-left: 2px;
+	padding-right: 2px;
+column-gap: 2px;
+  display: flex;
+  align-items: center;
+}
+
+/* Стили для поля ввода */
+.field_input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Стили для кнопки */
+.search_form button {
+  
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search_form button:hover {
+  background-color: #0056b3;
 }
