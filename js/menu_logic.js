@@ -1,6 +1,7 @@
 //alert('connected' alert(document.querySelector(".menu_panel").offsetHeight));//
 
 var menu_active = false
+var active_search = false
 
 
 
@@ -271,12 +272,16 @@ function animateSlideRight() {
   main_menu.classList.add('slide-left');
   var searcher = document.querySelector('.search');
   searcher.classList.add('slide-center');
+  active_search = true
+  
 
   setTimeout(function() {
+        var input = document.querySelector(".field_input"); // Замените "myInput" на ID вашего input
+        input.focus();
+        active_search = false
         
         
-        
-  }, 400)
+  }, 700)
   
   // Через определенное время удалите класс, чтобы анимация могла повториться при следующем нажатии
   /*setTimeout(function() {
@@ -296,7 +301,8 @@ function animateSlideLeft() {
         
         
         
-  }, 400)
+        
+  }, 700)
   
   // Через определенное время удалите класс, чтобы анимация могла повториться при следующем нажатии
   /*setTimeout(function() {
@@ -316,6 +322,26 @@ window.addEventListener('resize', function() {
   if (menu_active == false) {uncollapse_elem()}
 
   
+});
+
+window.addEventListener("click", function(event){
+        
+
+        var input = document.querySelector(".field_input"); // Замените "myInput" на ID вашего input
+if (input === document.activeElement) {
+  console.log("Input активен.");
+} else { setTimeout(function() {
+        if (active_search != true) {animateSlideLeft()}
+
+}, 10)
+        
+        
+        
+        
+        
+  }
+  
+
 });
 
 
