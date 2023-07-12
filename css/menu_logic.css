@@ -1,4 +1,9 @@
 :root {
+
+
+	--scrolbar_html: 0px;
+
+	--transition_cur: 1s;
   --real_transition: 0.7s;
   --real_transition2: 0.16s;
   --menu_height: calc(10px + 4vh);
@@ -23,6 +28,7 @@ background-color: red;
 @media (min-width: 601px){
 
 	:root{
+		--menu_height: calc(10px + 4vh);
 		--width_user_actions: calc(13vh + 50px);
 	}
 
@@ -31,7 +37,8 @@ background-color: red;
 @media (max-width: 600px) {
 
 	:root{
-		--width_user_actions: calc(25vh + 100px);
+		--menu_height: calc(20px + 8vh);
+		--width_user_actions: calc(20vh + 100px);
 	}
 
 	body{
@@ -45,20 +52,16 @@ background-color: red;
 		height: var(--menu_height_mobail) !important;
 	}
 
-	.content_menu_panel{
-		width: var(--menu_height_mobail) !important;
-	}
-
-	.content_menu_panel2{
-		width: var(--menu_height_mobail) !important;
-	}
-
 	.line{
 		width: calc(var(--menu_height_mobail)/1.9) !important;
 		height: calc(var(--menu_height_mobail)/16) !important;
 	}
 
 		.user_actions{
+		width: var(--width_user_actions_mobail);
+	}
+
+	.user_actions_search{
 		width: var(--width_user_actions_mobail);
 	}
 
@@ -75,6 +78,7 @@ background-color: red;
 	align-content: center;
     flex-wrap: nowrap;
     flex-direction: row;
+    overflow: hidden;
 }
 
 .invisible{
@@ -202,6 +206,10 @@ background-color: red;
 	display: flex;
 
 }
+.user_actions_search{
+	display: flex;
+
+}
 
 
 
@@ -264,12 +272,20 @@ background-color: red;
 	transition: var(--real_transition);
 }
 
+
+.user_actions_search{
+	
+	width: 100%;
+	transition: var(--real_transition);
+}
+
 .count_case{
 	font-size: calc(var(--menu_height)/2);
 	position: absolute;
     padding-top: 0px;
     margin-bottom: 0px;
     margin-top: 3px;
+    pointer-events: none;
 }
 
 
@@ -277,12 +293,122 @@ background-color: red;
 .nested{
 	justify-content: space-between;
     display: flex;
-    width: 98%;
+    width: fit-content;
     /* height: 40px; */
     height: var(--menu_height);
     background-color: #FFC107;
     align-content: center;
     flex-wrap: nowrap;
     flex-direction: row;
+    overflow: hidden;
+
+    
+    transform: translateX(0); /* Начальное смещение */
+  	transition: transform 1s ease-in;
+  	transition: var(--transition_cur);
 }
+
+
+
+.search{
+	position: absolute;
+	width: calc(100vw - var(--scrolbar_html));
+	height: 100%;
+	background-color:blue;
+	transform: translateX(102%);
+	transition: transform 1s ease-in;
+  	transition: var(--transition_cur);
+}
+
+
+
+
+
+.nested_menu{
+	justify-content: space-between;
+    display: flex;
+    width: 100vw;
+    /* height: 40px; */
+    height: var(--menu_height);
+    background-color: #FFC107;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow: hidden;
+
+    padding-left: 1px;
+    padding-right: 1px;
+    transform: translateX(0); /* Начальное смещение */
+  	transition: transform 1s ease-in-out;
+  	transition: var(--transition_cur);
+}
+.slide-left {
+    transform: translateX(-101%); /* Начальное смещение */
+}
+
+.slide-center {
+    transform: translateX(0); /* Начальное смещение */
+}
+
+.slide-right {
+    transform: translateX(101%); /* Начальное смещение */
+}
+
+
+.search_actions{
+	height: inherit;
+}
+
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: #666;
+  pointer-events: none;
+}
+
+
+.back{
+	font-size: calc(var(--menu_height)/1.0);
+	transition: color var(--real_transition), font-size var(--real_transition2);
+	rotate: 180deg;
+	padding-bottom: 5px;
+}
+
+.content_menu_panel2:hover>a>div{
+	color: red;
+	font-size: calc(var(--menu_height)/0.85);
+	transition: color var(--real_transition), font-size var(--real_transition2);
+
+}
+
+
+.search_form{
+	width: 100%;
+	display: flex;
+	height: 100%;
+
+}
+
+.input_form{
+	display: flex;
+	height: 100%;
+	width: calc(100vw - var(--menu_height));
+	background-color: red;
+
+}
+
+input{
+	width: 80%;
+}
+button{
+	width:20%;
+}
+
+
+
+
+html{
+
 }

@@ -3,6 +3,67 @@
 var menu_active = false
 
 
+
+
+
+
+/*    Вертикальный скролбар и играния с ним                     */
+function getVerticalScrollbarWidth() {
+  var outer = document.createElement('div');
+  outer.style.visibility = 'hidden';
+  outer.style.overflow = 'scroll';
+  document.body.appendChild(outer);
+
+  var scrollbarWidth = outer.offsetWidth - outer.clientWidth;
+
+  document.body.removeChild(outer);
+
+  return scrollbarWidth;
+}
+
+
+
+
+
+function hasVerticalScrollbar() {
+  return document.documentElement.scrollHeight > window.innerHeight;
+}
+
+
+function vertical_check(){
+if (hasVerticalScrollbar()) {
+  var scrollbarWidth = getVerticalScrollbarWidth();
+  return scrollbarWidth
+} else {
+  return false
+}
+}
+
+function resize_vertical_check(){
+        result = vertical_check()
+        console.log(result)
+        if (result == false){
+                res = '0px'
+        }
+        else{
+                res = result + 'px'
+
+        }
+        console.log(res)
+        document.documentElement.style.setProperty('--scrolbar_html', res);
+
+        
+}
+
+
+resize_vertical_check()
+
+/*    Конец Вертикальный скролбар и играния с ним                     */
+
+
+
+
+
 function collapse_elem(elem = '.user_actions'){
         document.querySelector(elem).style.width = '0px'
 
@@ -205,13 +266,63 @@ function change_smth(query = document.querySelector('.user_actions'), value = ge
 
 }
 
+function animateSlideRight() {
+  var main_menu = document.querySelector('.nested_menu');
+  main_menu.classList.add('slide-left');
+  var searcher = document.querySelector('.search');
+  searcher.classList.add('slide-center');
+
+  setTimeout(function() {
+        
+        
+        
+  }, 400)
+  
+  // Через определенное время удалите класс, чтобы анимация могла повториться при следующем нажатии
+  /*setTimeout(function() {
+    box.classList.remove('slide-right');
+  }, 10000);*/
+}
+
+
+
+function animateSlideLeft() {
+  var main_menu = document.querySelector('.nested_menu');
+  main_menu.classList.remove('slide-left');
+  var searcher = document.querySelector('.search');
+  searcher.classList.remove('slide-center');
+
+  setTimeout(function() {
+        
+        
+        
+  }, 400)
+  
+  // Через определенное время удалите класс, чтобы анимация могла повториться при следующем нажатии
+  /*setTimeout(function() {
+    box.classList.remove('slide-right');
+  }, 10000);*/
+}
+
 
 
 /*    EVENTS                     */
 window.addEventListener('resize', function() {
+
+        resize_vertical_check()
+
   var screenWidth = window.innerWidth;
 
   if (menu_active == false) {uncollapse_elem()}
 
   
 });
+
+
+
+
+
+
+
+/*    БЯКИ                     */
+
