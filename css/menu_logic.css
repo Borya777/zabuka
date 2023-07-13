@@ -497,6 +497,10 @@ column-gap: 2px;
 	transition: var(--real_transition3);
 }
 
+.tabs:hover{
+	background-color: red;
+}
+
 ul{
 	list-style-type: none;
     padding: 0;
