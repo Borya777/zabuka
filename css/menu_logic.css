@@ -488,6 +488,7 @@ column-gap: 2px;
 
 .tabs{
 	padding-left: 10px;
+	border: 1px solid floralwhite;
 }
 
 
@@ -502,7 +503,7 @@ column-gap: 2px;
 }
 
 .tabs:hover{
-	background-color: red;
+	background-color: whitesmoke;
 }
 
 ul{
@@ -538,4 +539,19 @@ body{
 
 .user_actions{
 	background-color: white;
+}
+.content_menu_panel{
+	border-bottom-right-radius: 10px;
+}
+.user_actions, .content_menu_panel2{
+	border-bottom-left-radius: 10px;
+}
+
+
+.text-with-shadow {
+  transition: text-shadow 0.3s ease; /* Плавный переход для анимации */
+}
+
+.text-with-shadow:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Красивая тень при наведении */
 }
