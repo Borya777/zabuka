@@ -277,6 +277,7 @@ function animateSlideRight() {
 
   setTimeout(function() {
         var input = document.querySelector(".field_input"); // Замените "myInput" на ID вашего input
+        input.setAttribute('autofocus', 'autofocus');
         input.focus();
         active_search = false
         
@@ -329,9 +330,10 @@ window.addEventListener("click", function(event){
 
         var input = document.querySelector(".field_input"); // Замените "myInput" на ID вашего input
 if (input === document.activeElement) {
-  console.log("Input активен.");
 } else { setTimeout(function() {
-        if (active_search != true) {animateSlideLeft()}
+        if (active_search != true) {animateSlideLeft()
+                input.removeAttribute('autofocus');
+}
 
 }, 10)
         
