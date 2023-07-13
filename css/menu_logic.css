@@ -67,7 +67,7 @@ background-color: red;
 		height: var(--menu_height_mobail) !important;
 	}
 
-	.nested{
+	.nested, .search{
 		height: var(--menu_height_mobail) !important;
 	}
 
@@ -398,7 +398,15 @@ a {
 
 .back{
 	transition: color var(--real_transition), font-size var(--real_transition2);
-	rotate: 180deg;
+	transform: rotate(180deg);
+
+
+	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  -moz-transform: rotate(180deg); /* Firefox */
+  -ms-transform: rotate(180deg); /* Internet Explorer */
+  -o-transform: rotate(180deg); /* Opera */
+
+
 	padding-bottom: 5px;
 }
 
