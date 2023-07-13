@@ -255,12 +255,12 @@ function assemble_event_activity(classlist, active='active'){
 
 
 function getNestedDivClass(event) {
-  var target = event.target; // Получение элемента, на котором произошло событие (родительского div)
-  if (target.className == 'content_menu_panel'){
+  var target = event // Получение элемента, на котором произошло событие (родительского div)
   var nestedDiv = target.querySelector('div'); // Получение вложенного div
   var nestedDivClass = nestedDiv.classList; // Получение класса вложенного div
   assemble_event_activity(nestedDivClass, active='active') // Вывод класса вложенного div в консоль или выполнение других операций
-}}
+
+}
 
 function change_smth(query = document.querySelector('.user_actions'), value = getComputedStyle(document.documentElement).getPropertyValue('--width_user_actions')){
 
