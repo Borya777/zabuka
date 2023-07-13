@@ -267,19 +267,36 @@ function change_smth(query = document.querySelector('.user_actions'), value = ge
 
 }
 
-function click2(elem = document.querySelector("#inputer")){
-        alert('sdaf')
-        elem.click()
+
+function onClick2(targetInput) {
+
+  // create invisible dummy input to receive the focus first
+  const fakeInput = document.createElement('input')
+  fakeInput.setAttribute('type', 'text')
+  fakeInput.style.position = 'absolute'
+  fakeInput.style.opacity = 0
+  fakeInput.style.height = 0
+  fakeInput.style.fontSize = '16px' // disable auto zoom
+
+  // you may need to append to another element depending on the browser's auto 
+  // zoom/scroll behavior
+  document.body.prepend(fakeInput)
+
+  // focus so that subsequent async focus will work
+  fakeInput.focus()
+
+  setTimeout(() => {
+
+    // now we can focus on the target input
+    targetInput.focus()
+
+    // cleanup
+    fakeInput.remove()
+    
+  }, 700)
+
 }
 
-function reload_input(){
-        var input = document.querySelector(".field_input");
-        input.style.display = "none"; 
-        console.log(input.style.display)
-        input.style.display = "block"; 
-        console.log(input.style.display)
-        input.focus()
-}
 
 function animateSlideRight() {
   var main_menu = document.querySelector('.nested_menu');
@@ -288,12 +305,14 @@ function animateSlideRight() {
   searcher.classList.add('slide-center');
   active_search = true
   var input = document.querySelector(".field_input"); // Замените "myInput" на ID вашего input
-  input.style.display = "block";        
+  input.style.display = "block"; 
+  onClick2(input)       
   
 
   setTimeout(function() {
-
-        click2()
+        
+        
+        input.focus()
 
         active_search = false
         
