@@ -278,7 +278,7 @@ function animateSlideRight() {
   setTimeout(function() {
         var input = document.querySelector(".field_input"); // Замените "myInput" на ID вашего input
         input.setAttribute('autofocus', 'autofocus');
-        input.focus();
+        input.focus().select();
         input.click();
         active_search = false
         
