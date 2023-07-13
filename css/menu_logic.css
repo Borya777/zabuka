@@ -538,6 +538,9 @@ body{
    -webkit-backdrop-filter: blur(4px);
   filter: blur(10px);
   -webkit-filter: blur(10px);
+  z-index:-1;
+  position:absolute;
+  -webkit-z-index:-1;
 }
 
 .user_actions{
