@@ -293,7 +293,7 @@ function onClick2(targetInput) {
     // cleanup
     fakeInput.remove()
     
-  }, 700)
+  }, 800)
 
 }
 
@@ -306,18 +306,11 @@ function animateSlideRight() {
   active_search = true
   var input = document.querySelector(".field_input"); // Замените "myInput" на ID вашего input
   input.style.display = "block"; 
-  onClick2(input)       
+  onClick2(input) 
+  active_search = false      
   
 
-  setTimeout(function() {
-        
-        
-        input.focus()
-
-        active_search = false
-        
-        
-  }, 700)
+  
   
   // Через определенное время удалите класс, чтобы анимация могла повториться при следующем нажатии
   /*setTimeout(function() {
