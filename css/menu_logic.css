@@ -6,6 +6,7 @@
 	--transition_cur: 1s;
   --real_transition: 0.7s;
   --real_transition2: 0.16s;
+  --real_transition3: 0.36s;
   --menu_height: calc(10px + 4vh);
   --width_user_actions: calc(13vh + 50px);
 
@@ -307,7 +308,7 @@ background-color: red;
 }
 
 .count_case{
-	font-size: calc(var(--menu_height)/2);
+	font-size: calc(var(--menu_height)/2.4);
 	position: absolute;
     padding-top: 0px;
     margin-bottom: 0px;
@@ -474,4 +475,31 @@ column-gap: 2px;
 
 .search_form button:hover {
   background-color: #0056b3;
+}
+
+
+.firstscreen{
+	overflow: hidden;
+}
+
+.tabs{
+	padding-left: 10px;
+}
+
+
+.tabs > .content_tabs{
+	font-size: calc(var(--menu_height)/1);
+	transition: var(--real_transition3);
+}
+
+.tabs:hover > .content_tabs{
+	transform: translateX(10%);
+	transition: var(--real_transition3);
+}
+
+ul{
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+
 }
