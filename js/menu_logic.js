@@ -42,7 +42,6 @@ if (hasVerticalScrollbar()) {
 
 function resize_vertical_check(){
         result = vertical_check()
-        console.log(result)
         if (result == false){
                 res = '0px'
         }
@@ -50,7 +49,7 @@ function resize_vertical_check(){
                 res = result + 'px'
 
         }
-        console.log(res)
+
         document.documentElement.style.setProperty('--scrolbar_html', res);
 
         
