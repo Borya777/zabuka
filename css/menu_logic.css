@@ -522,3 +522,7 @@ ul{
 	-webkit-overflow-scrolling: touch;
 
 }
+
+.invisible{
+	display:none;
+}

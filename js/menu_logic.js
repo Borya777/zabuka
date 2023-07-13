@@ -267,6 +267,19 @@ function change_smth(query = document.querySelector('.user_actions'), value = ge
 
 }
 
+function click2(elem = document.querySelector("#inputer")){
+        elem.click()
+}
+
+function reload_input(){
+        var input = document.querySelector(".field_input");
+        input.style.display = "none"; 
+        console.log(input.style.display)
+        input.style.display = "block"; 
+        console.log(input.style.display)
+        input.focus()
+}
+
 function animateSlideRight() {
   var main_menu = document.querySelector('.nested_menu');
   main_menu.classList.add('slide-left');
@@ -278,8 +291,11 @@ function animateSlideRight() {
   
 
   setTimeout(function() {
+
         input.style.display = "none"; 
+        console.log(input.style.display)
         input.style.display = "block"; 
+        console.log(input.style.display)
         input.focus()
 
         active_search = false
