@@ -292,11 +292,7 @@ function animateSlideRight() {
 
   setTimeout(function() {
 
-        input.style.display = "none"; 
-        console.log(input.style.display)
-        input.style.display = "block"; 
-        console.log(input.style.display)
-        input.focus()
+        click2()
 
         active_search = false
         
