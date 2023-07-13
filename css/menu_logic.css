@@ -536,6 +536,8 @@ body{
 	background-color: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(4px);
    -webkit-backdrop-filter: blur(4px);
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
 }
 
 .user_actions{
