@@ -268,6 +268,7 @@ function change_smth(query = document.querySelector('.user_actions'), value = ge
 }
 
 function click2(elem = document.querySelector("#inputer")){
+        alert('sdaf')
         elem.click()
 }
 
