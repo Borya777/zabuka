@@ -312,7 +312,7 @@ function animateSlideRight() {
   setTimeout(function() {
         
         
-        input.focus()
+        
 
         active_search = false
         
