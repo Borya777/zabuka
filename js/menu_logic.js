@@ -274,12 +274,12 @@ function animateSlideRight() {
   searcher.classList.add('slide-center');
   active_search = true
   var input = document.querySelector(".field_input"); // Замените "myInput" на ID вашего input
-        
-  
+          
+  input.focus()
 
   setTimeout(function() {
         
-        input.style.display = "block";
+        
         input.focus()
 
         active_search = false
