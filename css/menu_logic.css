@@ -165,6 +165,7 @@ background-color: red;
 
 
 .line:hover{
+	width: calc(var(--menu_height)/1.8);
 	transform-origin: left top;
 	transition: transform-origin var(--real_transition);/* ---------------------------------------------------------------ПЕРЕМЕННАЯ 1*/
 }
