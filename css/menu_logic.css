@@ -256,15 +256,15 @@ background-color: white;
 
 
 .loupeimg{
-	width: 70%;
-	height: 70%;
+	width: 63%;
+	height: 63%;
 	transition: var(--real_transition2);	
 
 }
 
 .content_menu_panel2:hover > .loupeimg{
-	width: 85%;
-	height: 85%;
+	width: 75%;
+	height: 75%;
 	transition: var(--real_transition2);	
 
 }
@@ -283,15 +283,15 @@ background-color: white;
 }
 
 .user_acc{
-	width: 55%;
-	height: 75%;	
+	width: 70%;
+	height: 63%;	
 	transition: var(--real_transition2);
 
 }
 
 .content_menu_panel2:hover > .user_acc{
-	width: 61%;
-	height: 80%;	
+	width: 80%;
+	height: 70%;	
 	transition: var(--real_transition2);
 
 }
