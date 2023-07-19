@@ -6,6 +6,8 @@
 
 	--font-size: 13.5px;
 
+	--border-radius-standart: 4px;
+
 
 	--current_transition: 0.5s;
 	--active_transition: 0.3s;
@@ -27,7 +29,6 @@
 
 
 body {
-	overflow:hidden;
 	width: 100%;
 margin: 0;
 padding: 0;
@@ -66,12 +67,12 @@ flex-direction: column;
 	width: 85%;
 }
 	.text_small{
-	font-size:  calc(var(--width_document) / 30);
+	font-size:  calc(var(--width_document) / 24);
 	text-overflow: ellipsis;
 }
 	.input_style{
 	font-size:  calc(var(--width_document) / 20);
-	min-height: calc(var(--width_document) / 15);
+	min-height: calc(var(--width_document) / 9);
 }
 
 }
@@ -159,11 +160,10 @@ flex-direction: column;
 
 .input_style {
 
-	color: var(--text_color) !important;
 	
 	width: -webkit-fill-available;
   border: 0.7px solid var(--grey);
-  border-radius: 1.8px;
+  border-radius: var(--border-radius-standart);
   outline: none;
   transition: var(--current_transition);
 
@@ -229,7 +229,7 @@ flex-direction: column;
 	padding-right: 1px;
 	background-color: white;
     top: -25%;
-    border-radius: 2px;
+    border-radius: var(--border-radius-standart);
     border: 0.7px solid var(--light_blue);
     transition: var(--current_transition);
 }
@@ -418,4 +418,10 @@ a:hover {
 		transform: translateX(100%);
 	transition: calc(var(--current_transition)*2);
 
+}
+
+
+.si{
+	width: 100vw;
+	overflow: hidden;
 }
