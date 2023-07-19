@@ -91,12 +91,25 @@ function validation(elem){
 }
 
 
+function loader_ex(){
+	element = document.querySelector('.loader');
+	if (element.classList.contains('loaderplus')) {
+  			element.classList.remove('loaderplus')
+} else {
+  // Класс 'my-class' отсутствует у элемента
+  element.classList.add('loaderplus')
+}
+
+}
+
+
 
 function handler(){
 	inputElement = document.querySelector('.input_auth');
 	elem = inputElement.value
 	console.log(inputElement.value)
 	validation(elem)
+	loader_ex()
 
 
 
@@ -200,8 +213,6 @@ allLinks.forEach(link => {
 });
 
 //----Бяки
-
-
 const openButton = document.querySelector('.back_s');
 
 openButton.addEventListener('click', function() {
@@ -209,4 +220,5 @@ openButton.addEventListener('click', function() {
   console.log('redirect')
   window.location.href = 'https://zabuka-g5qe.vercel.app/index.html';
 });
+
 

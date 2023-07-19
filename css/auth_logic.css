@@ -42,11 +42,11 @@ flex-direction: column;
 
 
 		.p1{
-	font-size: calc(var(--width_document) / 40);
+	font-size: calc(var(--width_document) / 30);
 }
 
 .p2{
-	font-size: calc(var(--width_document) / 30);
+	font-size: calc(var(--width_document) / 20);
 }
 
 
@@ -65,11 +65,11 @@ flex-direction: column;
 	width: 85%;
 }
 	.text_small{
-	font-size:  calc(var(--width_document) / 40);
+	font-size:  calc(var(--width_document) / 30);
 	text-overflow: ellipsis;
 }
 	.input_style{
-	font-size:  calc(var(--width_document) / 40);
+	font-size:  calc(var(--width_document) / 30);
 	min-height: calc(var(--width_document) / 15);
 }
 
@@ -405,5 +405,16 @@ a:hover {
 	padding-left: 10px;
 }
 
+.loader{
+	width: 100%;
+	height: 2px;
+	background-color: var(--blue_hover);
+	transform: translateX(-100%);
+	transition: calc(var(--current_transition)*2);
+}
 
+.loaderplus{
+		transform: translateX(100%);
+	transition: calc(var(--current_transition)*2);
 
+}
