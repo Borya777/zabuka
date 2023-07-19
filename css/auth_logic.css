@@ -42,11 +42,11 @@ flex-direction: column;
 
 
 		.p1{
-	font-size: calc(var(--width_document) / 30);
+	font-size: calc(var(--width_document) / 20);
 }
 
 .p2{
-	font-size: calc(var(--width_document) / 20);
+	font-size: calc(var(--width_document) / 15);
 }
 
 
@@ -69,7 +69,7 @@ flex-direction: column;
 	text-overflow: ellipsis;
 }
 	.input_style{
-	font-size:  calc(var(--width_document) / 30);
+	font-size:  calc(var(--width_document) / 20);
 	min-height: calc(var(--width_document) / 15);
 }
 

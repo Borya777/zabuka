@@ -64,7 +64,7 @@ function delete_all_style(element = document.querySelector('.error')){
 function next(){
 	legend_text = 'Чпароль'
 	forget_text = 'Забыли чпароль?'
-	c_forget_text = '<Назад'
+	c_forget_text = '< Назад'
 
 	forget = document.querySelector('.forget.p1')
 	c_forget = document.querySelector('.continue > .forget.p1')
