@@ -202,3 +202,11 @@ allLinks.forEach(link => {
 //----Бяки
 
 
+const openButton = document.querySelector('.back_s');
+
+openButton.addEventListener('click', function() {
+  // Укажите путь к другому HTML-документу вместо "path/to/your/document.html"
+  console.log('redirect')
+  window.location.href = 'https://zabuka-g5qe.vercel.app/index.html';
+});
+
