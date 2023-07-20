@@ -270,7 +270,7 @@ a:hover {
 
 
 .continue{
-	
+	align-items: center;
     margin-bottom: 16px;
 	display: flex;
     justify-content: space-between;
@@ -371,6 +371,10 @@ a:hover {
 .footer_auth a:hover{
 	color: var(--blue_hover);
 	transition: var(--active_transition);
+}
+
+.input_auth{
+	padding-left: 5px;
 }
 
 .silenced{
