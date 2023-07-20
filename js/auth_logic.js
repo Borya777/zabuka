@@ -24,6 +24,9 @@ for (var i = 0; i < current_inputs.length; i++)
 
 //--Функции-------------------------------------------------------------------
 
+
+
+
 function reloadPage() {
   location.reload();
 }
@@ -64,18 +67,56 @@ function delete_all_style(element = document.querySelector('.error')){
 function next(){
 	legend_text = 'Чпароль'
 	forget_text = 'Забыли чпароль?'
-	c_forget_text = '< Назад'
+
 
 	forget = document.querySelector('.forget.p1')
-	c_forget = document.querySelector('.continue > .forget.p1')
+	c_forget = document.querySelector('.interest_button_creation')
+	c_back = document.querySelector('.interest_button_back')
 
 	forget.textContent = forget_text
 	legend.textContent = legend_text
-	c_forget.textContent = c_forget_text
-	c_forget.classList.add('reload')
-	button = document.querySelector('.reload');
-	button.addEventListener('click', handleButtonClick);
+
+	c_forget.classList.add('display_none')
+	c_back.classList.remove('display_none')
+
+	
+	c_back.addEventListener('click', handleButtonClick);
 }
+
+
+function create_account(){
+
+	loader_ex()
+
+	current_input.classList.add('first_registration')
+	current_input.focus();
+		current_input.classList.remove("warning");
+	legend.classList.remove("warning");
+	delete_all_style()
+	enter_to_reg_text = 'Зарегистрироваться'
+	legend_text = 'Телефон или адрес электронной почты'
+	forget_text = 'Укажите номер телефона или электронную почту'
+
+	enter_to_reg = document.querySelector('.auth > .default_cursor.p1')
+	forget = document.querySelector('.forget.p1')
+	c_forget = document.querySelector('.interest_button_creation')
+	c_back = document.querySelector('.interest_button_back')
+
+	forget.textContent = forget_text
+	legend.textContent = legend_text
+	enter_to_reg.textContent = enter_to_reg_text
+
+
+	forget.classList.add('silenced')
+	c_forget.classList.add('display_none')
+	c_back.classList.remove('display_none')
+
+	
+	c_back.addEventListener('click', handleButtonClick);
+}
+
+
+
 
 function validation(elem){
 	if (elem != 'Стасель'){

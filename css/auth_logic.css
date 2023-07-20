@@ -432,3 +432,8 @@ a:hover {
     top: 10%;
     position: fixed;
 }
+
+
+.display_none{
+	display: none;
+}
